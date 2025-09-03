@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+
+:root {
+  --white: #FFFFFF;
+  --gray: #E5E5E5;
+  --brand: #0D99FF;
+  --system: #F24822;
+  --gray:   #565973;
+  --gray:  #0B0F19;
+  --green:  #22C55E;
+  --gray:  #E2E5F1;
+}
+
+body {
+   font-family: "Manrope", sans-serif; 
+   font-weight:400;
+  margin: 80px;
+  text-align: left;
+  margin-left: 80px;
+  padding: 0px;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;   /* stapla text & bild under varandra */
+    text-align: left; 
+     margin-top: 120px !important;
+       /* centrera texten */
+  }
+}
+    
+.hero img {
+    width: 80%;              /* gör bilden mindre */
+    max-width: 300px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 24px;
+  margin-top: 150px;   /* 👉 flyttar hela blocket nedåt */
+}
+
+
+
+
+
+  .hero-text h1 {
+    font-size: 24px;  
+    text-align:left;       /* mindre rubrik */
+  }
+
+  .hero-text p {
+    text-align: left;  }
+
+
+
+
+.mobilbild {
+  display: block;        /* gör att margin fungerar */
+    margin: 0 auto;       /* centrerar bilden */
+  margin-left: 80px; 
+  margin-top:400px;
+      }
+.tvåmobiler {
+    display: block;        /* gör att margin fungerar */
+    margin: 0 auto;       /* centrerar bilden */
+   text-align: right;
+    margin-right: 60px;
+    margin-top: -1010px;
+}
+
+
+
+
+
+.easypaymentsicon{
+    text-align: right;
+    width: 1100px;
+    height: 50px;
+    margin-top: 350px;
+}
+.coststatisticsicon {
+    text-align: right;
+    width: 1100px;
+    height: 50px;
+    margin-top: 10px;
+}
+.cashbackicon {
+    text-align: right;
+    width: 1100px;
+    height: 50px;
+    margin-top: 10px;
+}
+.datasecurityicon {
+    position: absolute;
+  top: 1010px;    
+  right: 100px; 
+  width: 150px;
+  height: 50px;
+}
+.supporticon {
+    position: absolute;
+  top: 1080px;    
+  right: 100px; 
+  width: 150px;
+  height: 50px;
+}
+.topstandards {
+    position: absolute;
+  top: 1150px;    
+  right: 100px; 
+  width: 150px;
+  height: 50px;
+}
+.sixlogos {
+    display: block;        /* gör att margin fungerar */
+    margin: 0 auto;       /* centrerar bilden */
+   text-align: right;
+    margin-right: 60px;
+    margin-top: 150px;
+    bottom: 500px;
+    
+}
+    
+
+@media (max-width: 768px){
+  .features{
+    grid-template-columns: 1fr;
+  }
+}
+
+.header {
+ 
+  display: flex;
+  justify-content: flex-end; /* trycker innehållet åt höger */
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: none;
+  border:none;
+}
+.signin-btn {
+    position: absolute;
+  top: 15px;   /* avstånd från toppen */
+  right: 100px;
+}
+.siliconlogo{
+    position: absolute;
+    top: 15px;
+    left:100px;
+  }
+.darkmodeicon {
+    position: absolute;
+    top: 20px;
+    right: 250px;
+    width: 80px;
+}
+
+.signin-btn:hover {
+  background: #4a42cc; /* lite mörkare vid hover */
+}
+
+
+
+button:hover {
+  background: var(--system);
+}
+.features{
+  max-width: 1100px;
+  margin: 40px auto 80px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr)); /* 2 kolumner */
+  gap: 28px 32px;
+}
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hidden {
+  display: none;
+  gap: 20px;
+}
+
+
+.fargRuta {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+.white { background: var(--white); color: #000; }
+.gray { background: var(--gray); color: #000; }
+.brand { background: var(--brand); }
+.system { background: var(--system); }
+.black { background: var(--black); }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Om din .hero-visual har absolut placerade loggor undertill
+   behöver den lite luft så typsnittet inte överlappar loggorna */
+.hero-visual{ padding-bottom: 110px; }
